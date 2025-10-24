@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App base */
+html, body, :root { height: 100%; }
+body { @apply bg-gray-50 text-gray-900 antialiased; }
+
+/* Typography defaults */
+h1 { @apply text-2xl font-semibold; }
+
+/* Table defaults */
+table { @apply w-full border rounded-lg bg-white shadow-sm; }
+thead { @apply bg-gray-50; }
+thead th { @apply text-xs font-semibold uppercase tracking-wide text-gray-600; }
+tbody td { @apply text-sm; }
+tr { @apply border-b last:border-b-0; }
+
+/* Container helper */
+.container { @apply max-w-5xl mx-auto p-6; }
